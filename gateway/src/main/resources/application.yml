@@ -1,0 +1,26 @@
+server:
+  port: 8089
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:3040/eureka/
+  instance:
+    prefer-ip-address: true
+    hostname: localhost
+ 
+spring:
+  application:
+    name: spring-gateway
+  cloud:
+    gateway:
+      routes:
+      - id: serviceMicro1
+        uri: lb://MICRO1
+        predicates:
+        - Path=/micro1/**
+      - id: serviceAccount
+        uri: lb://ACCOUNT
+        predicates:
+          - Path=/account/**
+
