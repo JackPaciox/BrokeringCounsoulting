@@ -1,8 +1,8 @@
-package it.contrader.controller;
+package it.shoppingtools.controller;
 
-import it.contrader.dto.LoginDTO;
-import it.contrader.dto.UserDTO;
-import it.contrader.service.UserService;
+import it.shoppingtools.dto.LoginDTO;
+import it.shoppingtools.dto.UserDTO;
+import it.shoppingtools.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

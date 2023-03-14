@@ -1,4 +1,4 @@
-package it.contrader.model;
+package it.shoppingtools.model;
 
 import javax.persistence.Entity;
 

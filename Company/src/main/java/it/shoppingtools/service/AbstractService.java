@@ -6,7 +6,7 @@ import it.shoppingtools.mapper.mapperclass;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.CrudRepository;
 
-public class AbstractService<DTO,Entity> implements ServiceDTO<DTO>{
+public abstract class AbstractService<DTO,Entity> implements ServiceDTO<DTO>{
 
 
     @Override

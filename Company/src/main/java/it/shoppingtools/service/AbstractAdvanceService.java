@@ -8,7 +8,7 @@ import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
 
-public class AbstractAdvanceService<DTO,Entity> extends AbstractService<DTO,Entity> implements AdvancedServiceDTO<DTO>{
+public abstract class AbstractAdvanceService<DTO,Entity> extends AbstractService<DTO,Entity> implements AdvancedServiceDTO<DTO>{
 
     @Autowired
     protected CrudRepository<Entity,Long> repository;

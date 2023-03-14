@@ -18,7 +18,6 @@ import java.time.LocalDate;
 @NoArgsConstructor
 public class AnnuncioDTO {
 
-    @Id
     private long id;
 
     private String name;

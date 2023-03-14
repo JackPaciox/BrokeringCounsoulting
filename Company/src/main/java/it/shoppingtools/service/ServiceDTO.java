@@ -1,6 +1,8 @@
 package it.shoppingtools.service;
 
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 /**
  * Questa interfaccia firma i metodi dei Service. Osservare che, a differenza di
@@ -12,6 +14,8 @@ import org.springframework.http.ResponseEntity;
  *
  * @see AbstractService
  */
+
+
 public interface ServiceDTO<DTO> {
 
 

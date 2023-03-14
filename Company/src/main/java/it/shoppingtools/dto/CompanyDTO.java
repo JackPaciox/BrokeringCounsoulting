@@ -16,7 +16,6 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class CompanyDTO {
-    @Id
     private long nome;
     private String ivaAddress;
     private String Description;

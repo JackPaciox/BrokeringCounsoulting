@@ -1,8 +1,8 @@
-package it.contrader.dto;
+package it.shoppingtools.dto;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
-import it.contrader.model.User.Usertype;
+import it.shoppingtools.model.User.Usertype;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
