@@ -28,5 +28,4 @@ public class Consulente {
     private LocalDate birthYear;
     private String introduction;
 
-
 }

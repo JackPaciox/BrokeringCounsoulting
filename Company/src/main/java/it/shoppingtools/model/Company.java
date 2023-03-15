@@ -20,8 +20,7 @@ import java.util.List;
 @NoArgsConstructor
 public class Company {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long nome;
+    private String nome;
     private String ivaAddress;
     private String Description;
     private Long userId;

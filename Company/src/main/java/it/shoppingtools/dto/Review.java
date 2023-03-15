@@ -18,7 +18,7 @@ import java.util.List;
 @NoArgsConstructor
 public class Review {
 
-    private long id;
+    private String id;
     private String jobRole;
     private String Description;
     private Long userId;

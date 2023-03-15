@@ -18,7 +18,7 @@ import java.time.LocalDate;
 @NoArgsConstructor
 public class AnnuncioDTO {
 
-    private long id;
+    private String id;
 
     private String name;
 

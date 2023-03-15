@@ -14,12 +14,24 @@ import javax.persistence.Id;
 @NoArgsConstructor
 public class Review {
 
-    @Id
-    private long id;
+    private String id;
     private String jobRole;
     private String Description;
     private Long userId;
 
     //the valuation should be from 1 to 5
-    private int valuation;
+    private Valuation valuation;
+
+
+    public enum Valuation{
+        Uncomplited,
+
+        BadDone,
+
+        Done,
+
+        WellDone,
+
+        VeryWellDone
+    }
 }

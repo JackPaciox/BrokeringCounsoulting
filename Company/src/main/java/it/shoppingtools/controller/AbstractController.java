@@ -34,7 +34,7 @@ public abstract class AbstractController <DTO>{
     private ServiceDTO<DTO> service;
 
     @DeleteMapping("/delete")
-    public ResponseEntity<?> delete(@RequestParam("id") long id) {
+    public ResponseEntity<?> delete(@RequestParam("id") String id) {
 
         if(service.existsById(id)){
             service.delete(id);
@@ -63,7 +63,7 @@ public abstract class AbstractController <DTO>{
     }
 
     @GetMapping("/read")
-    public ResponseEntity<?> read(long id) {
+    public ResponseEntity<?> read(String id) {
         if(service.existsById(id))
             return new ResponseEntity<DTO>((DTO)service.read(id), HttpStatus.OK);
 

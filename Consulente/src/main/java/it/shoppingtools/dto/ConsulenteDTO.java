@@ -17,8 +17,7 @@ import java.util.List;
 @NoArgsConstructor
 public class ConsulenteDTO {
 
-    @Id
-    private long id;
+    private String id;
     private String name;
     private String surname;
     private String IvaAddress;

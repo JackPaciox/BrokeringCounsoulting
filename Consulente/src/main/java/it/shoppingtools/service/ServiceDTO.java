@@ -17,16 +17,16 @@ public interface ServiceDTO<DTO> {
 
 //    public Iterable<DTO> getAll();
 
-    public DTO read(long id);
+    public DTO read(String id);
 
     public DTO insert (DTO dto);
 
 
     public DTO update (DTO dto);
 
-    public void delete (long id);
+    public void delete (String id);
 
-    public boolean existsById(long id);
+    public boolean existsById(String id);
 
 
 }

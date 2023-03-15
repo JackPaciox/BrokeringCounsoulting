@@ -14,8 +14,7 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ExperienceDTO {
-    @Id
-    private long id;
+    private String id;
     private LocalDate start;
     private LocalDate end;
     private String nameCompany;

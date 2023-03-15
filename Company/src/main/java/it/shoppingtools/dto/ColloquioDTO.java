@@ -18,7 +18,7 @@ import java.time.LocalTime;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ColloquioDTO {
-    private long id;
+    private String id;
     private String name;
     private LocalDate date;
     private LocalTime schedule;

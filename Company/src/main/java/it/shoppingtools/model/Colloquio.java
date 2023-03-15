@@ -21,8 +21,7 @@ import java.time.LocalTime;
 @NoArgsConstructor
 public class Colloquio {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private String id;
     private String name;
     private LocalDate date;
     private LocalTime schedule;

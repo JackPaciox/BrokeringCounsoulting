@@ -4,9 +4,11 @@ import it.shoppingtools.service.AdvancedServiceDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
 
-public class AbstractControllerAdvace<DTO> extends AbstractController<DTO>{
+@Component
+public abstract class AbstractControllerAdvace<DTO> extends AbstractController<DTO>{
 
     private AdvancedServiceDTO advancedServiceDTO;
 

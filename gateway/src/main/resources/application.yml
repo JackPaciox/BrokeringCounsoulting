@@ -23,4 +23,7 @@ spring:
         uri: lb://ACCOUNT
         predicates:
           - Path=/account/**
-
+      - id: serviceLogin
+        uri: lb://Login
+        predicates:
+          - Path=/login/**
