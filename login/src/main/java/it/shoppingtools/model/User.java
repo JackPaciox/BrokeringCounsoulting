@@ -20,9 +20,9 @@ public class User {
 	
 	public enum Usertype {
 		ADMIN,
-		USER
+		CONSULENT,
+		COMPANY
 	}
-
 	@Id
 	private String id;
 	
