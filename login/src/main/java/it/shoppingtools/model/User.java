@@ -1,5 +1,6 @@
 package it.shoppingtools.model;
 
+import javax.management.relation.Role;
 import javax.persistence.Entity;
 
 import javax.persistence.*;
@@ -11,13 +12,13 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Set;
 
 @Data
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
 public class User {
-	
 	public enum Usertype {
 		ADMIN,
 		CONSULENT,
@@ -28,9 +29,14 @@ public class User {
 	
 	@Column(unique = true)
 	private String username;
-	
+
+	private Set<Role> roles;
+
 	private String password;
 
 	private Usertype usertype;
-	
+
+	private String email;
+
+	private String phoneNumber;
 }

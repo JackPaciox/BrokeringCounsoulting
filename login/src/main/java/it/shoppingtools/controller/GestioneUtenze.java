@@ -25,10 +25,7 @@ public class GestioneUtenze {
     }
 
     //POST React a UserDTO
-    @PostMapping(value = "/login")
-    public UserDTO login(@RequestBody LoginDTO loginDTO) {
-        return userService.findByUsernameAndPassword(loginDTO.getUsername(), loginDTO.getPassword());
-    }
+
 
     public static String printHostname() throws IOException, InterruptedException {
         String cmd = "hostname";

@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
 @RestController
-@RequestMapping("/experiences")
-public class ExperienceController extends AbstractController<ExperienceDTO> {
+@RequestMapping("/previousexperience")
+public class PreviousExperienceController extends AbstractController<ExperienceDTO> {
+
 }
