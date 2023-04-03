@@ -24,6 +24,7 @@ public class ConsulenteDTO {
     private List<Experience> experiences;
     private boolean avaible;
     private LocalDate birthYear;
+    private CityDTO city;
     private String introduction;
 
 

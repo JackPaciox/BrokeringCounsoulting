@@ -18,6 +18,7 @@ public class ExperienceDTO {
     private LocalDate start;
     private LocalDate end;
     private String nameCompany;
-    private String role;
+    private CategoryDTO categoryDTO;
+    private String roleDescription;
     private String Description;
 }
