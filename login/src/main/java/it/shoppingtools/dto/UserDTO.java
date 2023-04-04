@@ -23,6 +23,7 @@ public class UserDTO {
 	private String password;
 
 	private Usertype usertype;
-	
+
+	private String userId;
 
 }
